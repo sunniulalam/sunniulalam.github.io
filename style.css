@@ -1,0 +1,27 @@
+header {
+    width: 100vw + 2px;
+    height: 80px;
+    margin: -9px;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #ff3e04;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.logo-navbar {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
