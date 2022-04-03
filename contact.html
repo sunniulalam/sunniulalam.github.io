@@ -2,32 +2,79 @@
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Contact Sun</title>
+    <title>Sunniul Alam</title>
+    <link rel="shortcut icon" href="images/2600.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="header">
+    <section class="subheader">
         <nav>
+            <!-- Navigation Bar -->
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutme.html">ABOUT ME</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
-            <h1>Under Development :(</h1>
-            <p>Email: alamsunniulbdi@gmail.com<br>Phone: +1(469)-427-3571
-            </p>
-            <!-- <a href="" class="hero-btn">Want to know more?</a> -->
+        <!-- Main Page -->
+        <h1>Contact Information</h1>
+    </section>
+
+    <section class="contact">
+        <div class="row">
+            <div class="cont">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Allen, Texas, USA</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1(469)427-3571</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>hire@sunniul.com</h5>
+                    </span>
+                </div>
+            </div>
+            <div class="cont">
+                
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Name/ Company" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea rows="10" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn yellow-btn">Send Email</button>
+                </form>
+
+            </div>
         </div>
     </section>
-    
+
+    <!-- JavaScript for Menu on small screens-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
 </body>
 </html>
