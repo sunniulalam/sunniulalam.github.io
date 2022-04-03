@@ -155,22 +155,39 @@ nav .fa{
     padding-top: 0px;
     padding-bottom: 50px;
 }
+.info{
+    flex-basis: 45%;
+    padding: 30px 2px;
+    text-align: center;
+    font-size: 25px;
+}
+.info h1{
+    padding-top: 0;
+    text-align: left;
+}
+.info p{
+    font-size: 20px;
+    padding: 15px 0 5px;
+    text-align: center;
+}
 .col{
-    flex-basis: 48%;
+    flex-basis: 45%;
     padding: 30px 2px;
 }
 .col img{
-    width: 100%;
+    width: 350px;
 }
 .col h1{
     padding-top: 0;
 }
 .col p{
-    padding: 15px 0 25px;
+    font-size: 20px;
+    padding: 15px 0 50px;
 }
 .yellow-btn{
     border: 1px solid #c7a022;
     background: transparent;
+    font-size: 22px;
     color: #c7a022
 }
 .yellow-btn:hover{
